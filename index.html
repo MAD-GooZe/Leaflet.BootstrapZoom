@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leaflet.BootstrapZoom</title>
+
+
+    <script src='//cdnjs.cloudflare.com/ajax/libs/showdown/1.3.0/showdown.min.js'></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+
+    <link rel="stylesheet" href="//cdn.leafletjs.com/leaflet/v1.0.0-beta.2/leaflet.css"/>
+    <script src="//cdn.leafletjs.com/leaflet/v1.0.0-beta.2/leaflet.js"></script>
+    
+    <script src="Leaflet.BootstrapZoom.min.js"></script>
+    
+    
+    <style>
+        #map {
+            height: 400px;
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <div id="readme"></div>
+            <div id="map" class="center-block"/>
+        </div>
+    </div>
+</div>
+<script>
+    function ajax(url, callback, data, x) {
+        try {
+            x = new(this.XMLHttpRequest || ActiveXObject)('MSXML2.XMLHTTP.3.0');
+            x.open(data ? 'POST' : 'GET', url, 1);
+            x.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+            x.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+            x.onreadystatechange = function () {
+                x.readyState > 3 && callback && callback(x.responseText, x);
+            };
+            x.send(data)
+        } catch (e) {
+            window.console && console.log(e);
+        }
+    }
+    var converter = new showdown.Converter();
+    ajax("README.md", function(text) {
+        document.getElementById("readme").innerHTML = converter.makeHtml(text);
+    });
+</script>
+
+
+<script>
+    var map = new L.Map('map').setView(new L.LatLng(51.3, 0.7), 8);
+	var osm = new L.TileLayer('//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	    minZoom: 8, 
+	    maxZoom: 12, 
+	    attribution: 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+    });		
+	map.addLayer(osm);
+</script>
+</body>
+</html>
