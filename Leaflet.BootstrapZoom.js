@@ -1,4 +1,4 @@
-L.Control.Zoom = L.Control.Zoom.extend({
+L.Control.BootstrapZoom = L.Control.Zoom = L.Control.Zoom.extend({
 	options: {
 		position: 'topleft',
 		zoomInText: '<span class="glyphicon glyphicon-zoom-in"/>',
@@ -8,7 +8,7 @@ L.Control.Zoom = L.Control.Zoom.extend({
 	},
 	
 	onAdd: function (map) {
-		var zoomName = 'leaflet-bootstrapcontrol-zoom',
+		var zoomName = 'leaflet-bootstrapzoom',
 		    container = L.DomUtil.create('div', zoomName + ' btn-group-vertical'),
 		    options = this.options;
 
