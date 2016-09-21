@@ -1,0 +1,19 @@
+{
+  "name": "leaflet-bootstrap-zoom",
+  "version": "1.0.0",
+  "description": "Leaflet.js plugin which overrides default zoom control buttons with Twitter Bootstrap styled ones.",
+  "main": "Leaflet.BootstrapZoom.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mad-gooze/Leaflet.BootstrapZoom.git"
+  },
+  "author": "Alexey Gusev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mad-gooze/Leaflet.BootstrapZoom/issues"
+  },
+  "homepage": "https://github.com/mad-gooze/Leaflet.BootstrapZoom#readme"
+}
