@@ -6,23 +6,20 @@ Tested with Leaflet v1.0.0-beta.2 and v1.0.0-rc.3
 
 [Demo](http://mad-gooze.github.io/Leaflet.BootstrapZoom/)
 ## Usage & Installation
-1. Include [Leaflet.BootstrapZoom.min.js](https://github.com/MAD-GooZe/Leaflet.BootstrapZoom/blob/gh-pages/Leaflet.BootstrapZoom.min.js) 
+1. Include [leaflet-bootstrap-zoom.min.js](https://github.com/mad-gooze/Leaflet.BootstrapZoom/blob/master/bin/leaflet-bootstrap-zoom.min.js) 
 after Leaflet and Bootstrap:
    
     ```html
-    <!--Leafet 1.0.0-rc.3-->
-    <link rel="stylesheet" href="http://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css"/>
-    <script src="http://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
-    
-    <!--Bootstrap-->
- 
-    <!--Leaflet.BootstrapZoom-->
-    <script src='Leaflet.BootstrapZoom.min.js'></script>
+    <script src='leaflet-bootstrap-zoom.min.js'></script>
+    ```
+    You can use hosted version from unpkg.com:
+    ```html
+    <script src='//unpkg.com/leaflet-bootstrap-zoom@1.0.0/bin/leaflet-bootstrap-zoom.min.js'></script>
     ```
 2. Bootstrap-styled controls are added automatically.
 
 ### NPM
-You can also install from npm
+You can also install from npm:
 ```bash
 npm install leaflet-bootstrap-zoom --save
 ```
