@@ -1,4 +1,4 @@
-# [Leaflet.BootstrapZoom](https://github.com/MAD-GooZe/Leaflet.BootstrapZoom) [![Build Status](https://travis-ci.org/mad-gooze/Leaflet.BootstrapZoom.svg?branch=master)](https://travis-ci.org/mad-gooze/Leaflet.BootstrapZoom)
+# [Leaflet.BootstrapZoom](https://github.com/MAD-GooZe/Leaflet.BootstrapZoom) [![Build Status](https://travis-ci.org/mad-gooze/Leaflet.BootstrapZoom.svg?branch=master)](https://travis-ci.org/mad-gooze/Leaflet.BootstrapZoom) [![npm version](https://img.shields.io/npm/v/leaflet-bootstrap-zoom.svg)](https://www.npmjs.com/package/leaflet-bootstrap-zoom)
 > Leaflet.js plugin which overrides default zoom control buttons with Twitter Bootstrap styled ones.
 
 This plugin adds a drop-in Twitter Bootstrap 3 styling for [Leaflet.js](http://leafletjs.com/) zoom control buttons. 
@@ -14,7 +14,7 @@ after Leaflet and Bootstrap:
     ```
     You can use hosted version from unpkg.com:
     ```html
-    <script src='//unpkg.com/leaflet-bootstrap-zoom@1.0.0/bin/leaflet-bootstrap-zoom.min.js'></script>
+    <script src='//unpkg.com/leaflet-bootstrap-zoom/bin/leaflet-bootstrap-zoom.min.js'></script>
     ```
 2. Bootstrap-styled controls are added automatically.
 

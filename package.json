@@ -1,6 +1,6 @@
 {
   "name": "leaflet-bootstrap-zoom",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Leaflet.js plugin which overrides default zoom control buttons with Twitter Bootstrap styled ones.",
   "main": "bin/leaflet-bootstrap-zoom.min.js",
   "scripts": {
