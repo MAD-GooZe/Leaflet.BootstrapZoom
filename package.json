@@ -26,5 +26,11 @@
     "eslint-config-yandex": "^1.0.6",
     "eslint-loader": "^1.5.0",
     "webpack": "^1.13.2"
-  }
+  },
+  "keywords": [
+    "bootstrap",
+    "controls",
+    "leaflet",
+    "zoom"
+  ]
 }
